@@ -9,6 +9,7 @@ import (
 	"os"
 )
 
+
 var users = []weather.User{
 	{
 		ChatId:   27995890,
@@ -20,7 +21,7 @@ var users = []weather.User{
 		Name:     "James",
 		Location: "Cornwall,uk",
 	},
-	{
+	weather.User{
 		ChatId:   582199789,
 		Name:     "Davide",
 		Location: "london,uk",

@@ -77,7 +77,7 @@ func getRecommendation(lr *LocationResponse) string {
 		recommendation = "You will need a coat or jumper this morning, but it will warm up later. "
 	} else if lr.CurrentTemp > 10 && lr.HighTemp <= 15 {
 		recommendation = "You should be fine with shorts today, but you might want to take a jumper too."
-	} else if lr.CurrentTemp > 10 && lr.CurrentTemp > 15 {
+	} else if lr.CurrentTemp > 10 && lr.HighTemp > 15 {
 		recommendation = "You should be fine with shorts today and you won't need a jumper."
 	} else {
 		recommendation = "You should wear the standard jeans and a jumper."
