@@ -8,7 +8,8 @@ You'll need to create a `.env` file in the route of the project with the credent
 ```
 API_TOKEN=""
 API_KEY=""
-API_URL="http://api.openweathermap.org/data/2.5/weather?q="```
+API_URL="http://api.openweathermap.org/data/2.5/weather?q="
+```
 
 I use openweathermap, but you can use whatever.
 
