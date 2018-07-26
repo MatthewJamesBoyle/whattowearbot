@@ -8,11 +8,11 @@ You'll need to create a `.env` file in the route of the project with the credent
 ```
 API_TOKEN=""
 API_KEY=""
-API_URL="http://api.openweathermap.org/data/2.5/weather?q="
+API_URL="hhttp://dataservice.accuweather.com/forecasts/v1/daily/1day/"
 ```
 
-I use openweathermap, but you can use whatever.
+I use AccuWeather. You may need to update the parse method if you wish to use another service.
 
 after that, just message your bot on telegram to get the conversation id in your go console. Paste this into the userslice (examples incldued in `main.go`) and the app should work!
 
-I have this hosted on AWS Lambda using a Cloudwatch cron Trigger to run at 5:30am every morning UTC. This is a really effective (and free) way to host this.
+I have this hosted on AWS Lambda using a Cloudwatch cron Trigger to run at 5:30am every morning UTC. This is a really effective (and free) way to host this. Included is a main method to run locally that you can use to test or use as a basis to use a different provider.
