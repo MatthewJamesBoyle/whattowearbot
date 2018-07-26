@@ -7,6 +7,7 @@ import (
 	"github.com/go-telegram-bot-api/telegram-bot-api"
 	"log"
 	"os"
+	"github.com/aws/aws-lambda-go/lambda"
 )
 
 var users = []weather.User{
@@ -59,9 +60,9 @@ var users = []weather.User{
 //	}
 //}
 
-//func main() {
-//	lambda.Start(HandleRequest)
-//}
+func main() {
+	lambda.Start(HandleRequest)
+}
 
 func HandleRequest(ctx context.Context) (string, error) {
 	bot, err := tgbotapi.NewBotAPI(os.Getenv("API_TOKEN"))

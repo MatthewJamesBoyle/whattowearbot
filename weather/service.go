@@ -21,8 +21,6 @@ type LocationService struct {
 	ApiKey string
 }
 
-// WeatherIds from here:
-// https://openweathermap.org/weather-conditions
 type LocationResponse struct {
 	LowTemp            float64
 	HighTemp           float64
